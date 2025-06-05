@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hammer strength Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="card">
+    <div class="machine">
+      <img src="images/Machine.png" alt="machine" style="width: 100%; height: auto;">
+
+    </div>
+    <div class="needle-container">
+      <div id="needle"></div>
+    </div>
+    <div class="hammer" id="hammer">
+      <img src="images/Hammer.png" alt="hammer">
+    </div>
+
+  </div>
+  <h2 id="playerTurn" style="color: white; font-size: 24px;">Player 1's Turn</h2>
+  <div id="scoreDisplay" style="color: white; font-size: 24px; margin-top: 20px;"></div>
+  <div id="winnerDisplay" style="color: white; font-size: 24px; margin-top: 10px;"></div>
+
+  <div class="buttons">
+    <button id="Hit">HIT!</button>
+    <button id="restart">Start Again</button>
+  </div>
+  <h1 id="content">Press HIT! to stop</h1>
+  <script src="script.js"></script>
+</body>
+
+</html>

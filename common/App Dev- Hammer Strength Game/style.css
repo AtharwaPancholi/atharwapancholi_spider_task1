@@ -1,0 +1,158 @@
+/* Global Styles */
+body {
+  background-color: crimson;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
+  text-align: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 3 / 4;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.machine img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.hammer img {
+  width: 30%;
+  max-width: 150px;
+  height: auto;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.needle-container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+#needle {
+  width: 6px;
+  height: 150px;
+  background-color: crimson;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+#Hit {
+  background-color: #444;
+  color: white;
+}
+
+#Hit:hover {
+  background-color: #fff;
+  color: #444;
+  border: 2px solid #444;
+}
+
+#restart {
+  background-color: #888;
+  color: white;
+  display: none;
+}
+
+#restart:hover {
+  background-color: #fff;
+  color: #888;
+  border: 2px solid #888;
+}
+
+h1, h2, #scoreDisplay, #winnerDisplay {
+  color: white;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    aspect-ratio: 3 / 5;
+  }
+
+  .needle-container {
+    top: 35%;
+  }
+
+  .hammer img {
+    width: 40%;
+  }
+
+  #needle {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 95%;
+    aspect-ratio: 3 / 5;
+  }
+
+  .needle-container {
+    top: 38%;
+  }
+
+  .hammer img {
+    width: 45%;
+  }
+
+  #needle {
+    height: 100px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  h1, h2, #scoreDisplay, #winnerDisplay {
+    font-size: 1rem;
+  }
+}
