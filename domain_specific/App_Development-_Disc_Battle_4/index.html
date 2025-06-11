@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disc Battle 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+    <div class="left-size">
+    <h1>Disc Battle 4</h1>
+    <div class="timer" id="timer">Red: 120   |   Yellow: 120</div>
+    <h2 id="winner"></h2>
+     <div id="board"></div>
+     </div>
+     <div class="right-side">
+        <div class="toggle">
+       <label>
+        <input type="checkbox" id="soundToggle" checked>
+        Sound Effects
+       </label>
+      <label>
+  <input type="checkbox" id="themeToggle" />
+  Dark Mode
+</label> 
+    </div>
+     <h2 id="waitingForBlock"></h2>
+    <div class="buttons" id="buttons"> 
+        <button>Column 1</button>
+        <button>Column 2</button>
+        <button>Column 3</button>
+        <button>Column 4</button>
+        <button>Column 5</button>
+        <button>Column 6</button>
+        <button>Column 7</button>
+    </div>
+    <div id="powerups">
+        <h3>Power-Ups</h3>
+        <button id="addTimeBtn">Add 5 seconds</button>
+        <button id="blockImmunityBtn">Use Block Immunity</button>
+    </div>
+    <div id="statusMessage"></div>
+    <div id="leaderboard">
+    <h3>Leaderboard</h3>
+    <p>Red Wins: <span id="redScore">0</span></p>
+    <p>Yellow Wins: <span id="yellowScore">0</span></p>
+    <button  id="reset" onclick="resetLeaderboard()">Reset Leaderboard</button>
+    </div>
+</div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
